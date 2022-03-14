@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 
 :root{
-    --dark: #2b2d42;
+    --dark: #081ce5;
     --light: #adb5bd;
     --border: #dee2e6;
     --border-btn: #edf2f4;
@@ -47,7 +47,7 @@ a {
 }
 
 .text-dark{
-    color: var(--dark);
+    color: #2b2d42;
 }
 
 .inline{
@@ -66,7 +66,7 @@ a {
 }
 
 #header nav{
-    background-color: #d68306;
+    background-color: yellow;
     padding: 1em 0;
     width: 100%;
 }
@@ -104,7 +104,7 @@ table{
 }
 
 .table tr:hover{
-    background-color:#F4C430 ;
+    background-color:yellow ;
 }
 
 .table tr:hover td > a{
@@ -114,7 +114,7 @@ table{
 .table .thead-dark th{
     color: #fff;
     background-color: var(--dark) ;
-    border-color: #32383e;
+    border-color: #081ce5;
 }
 
 @media only screen and (max-width: 1024px){
@@ -197,13 +197,13 @@ table{
 }
 
 .radio input[type='radio']:checked + .radio-label:before{
-    background-color: #F4C430;
+    background-color: yellow;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type='radio']:focus + .radio-label:before{
     outline: none;
-    border-color:#F4C430;
+    border-color:yellow;
 }
 
 .radio input[type='radio']:disabled + .radio-label:before{
@@ -216,7 +216,7 @@ table{
 #add_user .form-group .btn{
     width: 100%;
     padding: .9em 1em;
-    background-color:#F4C430; 
+    background-color:yellow; 
     border: none;
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
