@@ -1,0 +1,29 @@
+{
+  "name": "crud_app",
+  "version": "1.0.0",
+  "description": "crud app using nodejs expressjs and mongoDb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "crud",
+    "mongodb"
+  ],
+  "author": "aakash",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parse": "^0.1.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0",
+    "node": "^17.5.0",
+    "nodemon": "^2.0.15"
+  }
+}
+
+
