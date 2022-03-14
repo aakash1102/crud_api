@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 exports.homeRoute = (req,res)=>{
-    axios.get('http://localhost:3000/api/user')
+    axios.get('https://crud-api-js.herokuapp.com/api/user')
     .then(function(response){
         //console.log(response.data[0])
         res.render('index',{users : response.data})
@@ -17,7 +17,7 @@ exports.add_user = (req,res)=>{
 }
 
 exports.update_user = (req, res) =>{
-    axios.get('http://localhost:3000/api/user', { params : { id : req.query.id }})
+    axios.get('https://crud-api-js.herokuapp.com/api/user', { params : { id : req.query.id }})
     .then(function(userdata){
         //console.log(params);
         res.render("update_user", { user : userdata.data})
