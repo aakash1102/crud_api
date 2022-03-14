@@ -71,6 +71,12 @@ a {
     width: 100%;
 }
 
+.footer{
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+}
+
 #site-main{
     margin-top: 6em;
     font-family: 'Barlow', sans-serif;
