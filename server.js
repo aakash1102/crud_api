@@ -10,7 +10,7 @@ const connectDB = require('./server/database/connection')
 const app = express();
 
 dotenv.config({path:'config.env'})
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 //this middleware for HTTP request logger.
 app.use(morgon('tiny'));
@@ -38,7 +38,7 @@ app.use('/js', express.static(__dirname + '/assets/js'));
 
 app.use('/', require('./server/routes/router'))
 
-app.listen(PORT,()=>{
-    console.log(`Server is running on http://localhost:${PORT}`);
-    console.log("value is", express.static(resolve(__dirname,'/assets/csss')));
+app.listen(PORT ||3000,()=>{
+    //console.log(`Server is running on http://localhost:${PORT}`);
+    //console.log("value is", express.static(resolve(__dirname,'/assets/csss')));
 });
