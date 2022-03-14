@@ -38,7 +38,7 @@ app.use('/js', express.static(__dirname + '/assets/js'));
 
 app.use('/', require('./server/routes/router'))
 
-app.listen(PORT ||3000,()=>{
+app.listen(3000 || PORT,()=>{
     //console.log(`Server is running on http://localhost:${PORT}`);
     //console.log("value is", express.static(resolve(__dirname,'/assets/csss')));
 });
